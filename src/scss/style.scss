@@ -1,0 +1,350 @@
+// Main Sass File
+/*
+=========================================
+=========================================
+
+Main style
+
+=========================================
+========================================= */
+$mainColor : #FE5A1A;
+$submainColor : #fff;
+$footerbkgColor : #161616 ;
+$orangeColor : #fe5a1a;
+*{
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  font-family: 'Muli', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+button{
+  border: none;
+  background: none
+}
+/*
+*
+* =====================
+* NavBar Section
+* =====================
+*
+*/
+ nav{
+   padding: 0 !important;
+   background: $submainColor
+ }
+ nav .container-fluid{
+   padding-left: 0
+ }
+ .brandnotlgxl,
+ .navbar-brand{
+   padding: 20px 45px;
+   background: $mainColor;
+ }
+ nav ul li:nth-of-type(2) a{
+ }
+ nav .navbar-brand{
+   height: 100%
+ }
+ nav ul .show{
+   display: flex;
+ }
+ .dropdown-menu {
+   background: #F5F5F5;
+   border-radius: 0;
+   border: none;
+   top: 140%;
+ }
+.dropright .dropdown-menu{
+   padding: 5px 25px 5px 15px;
+   left: 90% !important;
+   box-shadow: 1px 1px 1px #DDD, -1px -1px 1px #DDD;
+   -webkit-box-shadow: 1px 1px 1px #DDD, -1px -1px 1px #DDD;
+   -moz-box-shadow: 1px 1px 1px #DDD, -1px -1px 1px #DDD;
+   -o-box-shadow: 1px 1px 1px #DDD, -1px -1px 1px #DDD;
+  }
+ nav .static{
+   position: static;
+ }
+  nav .static .nav-link{
+    position: relative;
+  }
+  nav .static .nav-link:after{
+    content: "SALE";
+    display: block;
+    position: absolute;
+    top: 2px;
+    background: #f00;
+    color: $submainColor;
+    height: 15px;
+    width: 30px;
+    text-align: center;
+    font-size: 9px;
+    line-height: 15px;
+    font-weight: 700;
+    left: 10px;
+    border-radius: 1px;
+    border: none
+  }
+ .static .parent{
+   width: 100%;
+   top: 200%;
+   padding-top: 40px
+ }
+ .static .parent:hover{
+   opacity: 1
+ }
+ .dropdown-item{
+   padding: 5px 10px
+ }
+ .navbar-light .navbar-nav .nav-link ,
+ .dropdown-item h5{
+   font-weight: 700;
+   color: #777
+ }
+  .dropdown-item:last-of-type{
+    padding-right: 5px
+  }
+  .dropdown-item a:hover{
+    background: transparent !important
+  }
+.dropdown-item h5:hover{
+   color: $mainColor;
+}
+  .dropdown-menu .img img{
+    margin-bottom: 15px;
+    height: 100%;
+    width:210px
+  }
+  nav .nav-item .nav-link{
+    padding: 16px 4px
+  }
+  .dropdown-menu .img{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 150px
+  }
+  .dropdown-menu .img img:hover{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+  .dropdown-menu li{
+    margin-top: 5px
+  }
+  li .dropdown-toggle ,
+  .dropdown-menu a{
+    color: #777 !important;
+    font-weight: 700;
+
+  }
+  .dropdown-menu a:hover{
+    color: $mainColor !important
+  }
+  .dropdown-toggle::after{
+    display: none ;
+  }
+  .dropright .dropdown-toggle::after{
+    display: none;
+  }
+  .navbar-light .navbar-nav .nav-link i,
+  .dropright .dropdown-toggle i{
+    margin-left: 3px
+  }
+  .navbar-light .icons a{
+    color:$mainColor;
+    margin-right: 20px
+  }
+  .navbar-light .icons a i{
+    font-size: 22px
+  }
+  .navbar-light .icons a:hover{
+    color: #333
+  }
+  .dropright .dropdown-menu,
+  nav li .dropdown-menu{
+    display:block;
+    visibility:hidden;
+    opacity: 0;
+}
+.dropright:hover .dropdown-menu ,
+  nav .nav-item:hover .main-menu{
+    visibility:visible;
+    top:112%;
+    opacity: 1;
+}
+.dropright:hover .dropdown-menu{
+  top: 0 !important ;
+}
+nav .nav-item:hover .parent{
+  top:98%;
+}
+.icons .cog-settings{
+  right: 10px !important;
+  left: auto !important;
+  display: block;
+  opacity: 0;
+  visibility:hidden;
+}
+.icons  .cog-dropdown:hover .cog-settings {
+  visibility:visible;
+  top:60px;
+  opacity: 1;
+}
+.choose-language ,
+.choose-currency{
+  padding: 15px 40px
+}
+.choose-language h5 ,
+.choose-currency h5{
+  color: #777 ;
+  font-size: 14px;
+  position: relative;
+  margin-bottom: 10px
+}
+.choose-language li,
+.choose-currency li{
+  font-size: 12px;
+  padding: 5px 2px;
+  color: #333
+}
+.choose-language li.active,
+.choose-currency li.active{
+  background: #d8d8d8
+}
+.choose-language h5 .arrow ,
+.choose-currency h5 .arrow{
+  content: "";
+  border-right: solid 2px #b7b7b7;
+  border-bottom: solid 2px #b7b7b7;
+  height: 6px;
+  width: 6px;
+  position: absolute;
+  top: 40%;
+  right: -20px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.choose-language h5:after:hover ,
+.choose-currency h5:after:hover{
+  -webkit-transform: rotate(235deg);
+  -moz-transform: rotate(235deg);
+  -o-transform: rotate(235deg);
+  transform: rotate(235deg);
+}
+@media (max-width:1199px){
+  .dropright .dropdown-menu,
+  nav li .dropdown-menu{
+    display: table-column;
+  }
+  .cog-settings{
+    display: table-column;
+  }
+}
+  @media (max-width:991px){
+    nav{
+      padding:15px !important ;
+    }
+    nav .nav-item{
+    border-bottom: 1px solid #d8d8d8
+    }
+    nav .parent{
+      padding-left: 10px
+    }
+    nav .parent:hover{
+      display: block;
+    }
+    .icons {
+      padding-top: 15px;
+    }
+  }
+
+/*
+*
+* =====================
+* Footer Section
+* =====================
+*
+*/
+
+footer{
+  background: $footerbkgColor ;
+  padding-top: 80px ;
+  padding-bottom: 80px;
+  font-weight: 700
+}
+li a{
+  color: $mainColor;
+}
+li a:hover{
+  color: $submainColor;
+  text-decoration: none;
+}
+footer .row div{
+  margin-top: 20px
+}
+footer h4{
+  color:$submainColor;
+}
+footer p{
+  color: #777;
+  line-height: 30px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  font-weight: 400
+}
+footer p span{
+  color: $submainColor
+}
+footer .sociallinks a{
+  display: inline-block;;
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+  background: #333;
+  border-radius: 50%;
+  text-align: center;
+  margin-top: 15px
+}
+footer .sociallinks i{
+  color: $submainColor ;
+  font-size: 25px;
+  line-height: 60px;
+}
+footer .sociallinks a:hover{
+  background: $submainColor;
+}
+footer .sociallinks a:hover i{
+  color: $mainColor;
+}
+footer input{
+  height: 45px ;
+  padding: 5px;
+  width: 50%
+}
+footer input[type="submit"]{
+  background: $mainColor;
+  color: $submainColor;
+  border: 2px solid $mainColor;
+  margin-left: -5px;
+  cursor: pointer;
+  width: 35%
+}
+footer input[type="submit"]:hover{
+  border: 2px solid $mainColor;
+  color: $mainColor;
+  background: $submainColor
+}
+footer p p{
+  color: $mainColor;
+}
