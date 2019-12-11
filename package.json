@@ -5,7 +5,7 @@
   "description": "Bootstrap 4 starter workflow",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "npm run deploy",
     "deploy": "gh-pages -d build",
     "start": "gulp"
   },
