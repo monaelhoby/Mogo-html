@@ -7,8 +7,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "gulp",
-    "build": "react-scripts build",
+    "start": "gulp"
   },
   "author": "Brad Traversy",
   "license": "MIT",

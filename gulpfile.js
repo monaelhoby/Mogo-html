@@ -41,3 +41,11 @@ gulp.task('fa', function() {
 })
 
 gulp.task('default', ['js','serve', 'fa', 'fonts']);
+
+gulp.task('build', function(){
+    gulp.src(path.JS)
+      .pipe(react())
+      .pipe(concat(path.MINIFIED_OUT))
+      .pipe(uglify(path.MINIFIED_OUT))
+      .pipe(gulp.dest(path.DEST_BUILD));
+  });
